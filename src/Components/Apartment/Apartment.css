@@ -1,0 +1,101 @@
+.bathroom {
+  grid-area: bathroom;
+}
+
+.bedroom {
+  grid-area: bedroom;
+}
+
+.living-room {
+  grid-area: livingroom;
+}
+
+.storage-room {
+  grid-area: storageroom;
+}
+
+.hallway {
+  grid-area: hallway;
+}
+
+.room-container {
+  height: 100%;
+  display: 100%;
+  display: grid;
+  background-color: green;
+  grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+  grid-template-rows: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+  grid-template-areas:
+    "bathroom bathroom bathroom storageroom storageroom . . ."
+    "bathroom bathroom bathroom storageroom storageroom . . ."
+    "bathroom bathroom bathroom hallway hallway . . ."
+    "bathroom bathroom bathroom hallway hallway . . ."
+    "bedroom bedroom livingroom livingroom livingroom livingroom livingroom livingroom"
+    "bedroom bedroom livingroom livingroom livingroom livingroom livingroom livingroom"
+    "bedroom bedroom livingroom livingroom livingroom livingroom livingroom livingroom"
+    "bedroom bedroom livingroom livingroom livingroom livingroom livingroom livingroom";
+}
+
+.bathroom {
+    background-image: url("../../Assets/images/rooms/bath.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hallway {
+    background-image: url("../../Assets/images/rooms/hall.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.storage-room {
+    background-image: url("../../Assets/images/rooms/storage.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bedroom {
+    background-image: url("../../Assets/images/rooms/bed.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.living-room {
+    background-image: url("../../Assets/images/rooms/living.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.room {
+  background-color: whitesmoke;
+  border: solid 4px black;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.room > .button-container {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.room > .button-container > button {
+    background-color: whitesmoke;
+    padding: 2vw;
+    border-radius: 1vw;
+}
+
+.room > .button-container > button:hover {
+    cursor: pointer;
+}
